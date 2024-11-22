@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  line-height: 9px;
+  background-color: black;
+  background-size: 777px;
+  min-width: 860px;
+  min-height: 100vh;
+  height: 768px;
+  font-family: 'Starve';
+  image-rendering: pixelated;
+}
+header{
+  display: flex;
+  position: relative;
+  position: absolute;
+  background-color: #000;
+  z-index: 13;
+  width: 100%;
+  background-size: cover;
+}
+.button0{
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  font-family: 'Starve';
+  font-size: 2em;
+}
+.Noise42{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; 
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  .video42{
+    opacity: 0.6;
+  }
+.container {
+    min-width: 375px;
+    max-width: 4090px;
+    display:flex;
+    width: auto;
+    height: 900px;
+    position: relative;
+    justify-content: center;
+}
+.Back{
+    height: 90%;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    max-width: 3000px;
+    overflow: hidden;
+    margin: 95px auto;
+}
+.video{
+    position: absolute;
+
+}
+.RES1{
+    display:flex;
+    z-index: 6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.RES42{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    animation: fall 3s infinite ease-in-out;
+}
+.RES42:hover{
+    animation: hover 0.3s ease forwards;
+}
+@keyframes fall {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+  }
+  @keyframes hover{
+    0%{transform: scale(1);}
+    100% {transform: scale(1.1);}
+  }
+.Back1{
+    right: 1px;
+    margin: 120 auto;
+    position: absolute;
+    height: 70%;
+    width: 50%;
+
+}
+
+.HO{
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    margin: 450 auto;
+}
+.Corpse1{
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    animation: DRO 5ms infinite ease-in-out, DRO2 1ms infinite ease-in-out;
+}
+@keyframes DRO2 {
+    0%{transform:translateY(0px)}
+    10%{transform:translateY(-5px)}
+    20%{transform:translateY(-6px)}
+    30%{transform:translateY(-7px)}
+    40%{transform:translateY(-8px)}
+    50%{transform:translateY(-7px)}
+    60%{transform:translateY(-6px)}
+    70%{transform:translateY(-5px)}
+    80%{transform:translateY(-4px)}
+    90%{transform:translateY(-3px)}
+    100%{transform:translateY(0px)}
+  }
+  @keyframes DRO {
+    0%{transform:rotate(0.3deg)}
+    10%{transform:rotate(-0.3deg)}
+    20%{transform:rotate(0.2deg)}
+    30%{transform:rotate(0.4deg)}
+    40%{transform:rotate(-0.1deg)}
+    50%{transform:rotate(0.3deg)}
+    60%{transform:rotate(-0.4deg)}
+    70%{transform:rotate(-0.2deg)}
+    80%{transform:rotate(0.3deg)}
+    90%{transform:rotate(0.4deg)}
+    100%{transform:rotate(0.3deg)}
+
+  }
+  .blok{
+    animation: DRO 5ms infinite ease-in-out, DRO2 1ms infinite ease-in-out;
+    z-index: 8;
+    margin: 97 auto;
+    left: 50px;
+    background-color: #000000;
+    position: absolute;
+    width: 30%;
+    height: 42%;
+  }
